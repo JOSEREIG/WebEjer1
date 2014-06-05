@@ -283,7 +283,7 @@ nav ul li a:hover
 	#contenido .item:nth-child(odd) {
 		margin-right: 2%;
 	}
-
+/* nth-child() odd: impares, even: pares; tambien funciona como un vector nth-child(3)*/
 
 }
 
@@ -303,7 +303,7 @@ nav ul li a:hover
 }
 
 
-
+/*    320px, 480px, ipad 768px, 960px  */
 
 
 
