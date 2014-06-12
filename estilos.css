@@ -305,6 +305,42 @@ nav ul li a:hover
 
 /*    320px, 480px, ipad 768px, 960px  */
 
+/**
+* FORMULARIO
+*/
+
+.formulario 
+{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+.formulario input 
+{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+.formulario input[type="submit"]
+{
+	background: #22BCE0;
+	border-color: #22BCE0;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 2px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
