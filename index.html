@@ -5,7 +5,7 @@
 	<title>Puls2014 Comunidad online</title>
 	<meta name="description" content="Web de pruebas del curso Desarrollo Web online de mejorando.la" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
-	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' /> -->
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="estilos.css" />
 	<script src="prefixfree.js"></script>
@@ -185,8 +185,22 @@
 		</p>
 		<p>mejorando.la 2014</p>
 	</footer>
-<script src="jquery-1.11.1.min.js"></script>
-<script src="formulario.js"></script>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="formulario.js"></script>
+	<script>
+		window.onload = function()
+		{
+			console.log("Ya se disparó el evento onLoad");
+		}
+
+		// $(document).on('ready', function() {
+		// 	console.log('Ya se disparó el evento DOMContentLoaded');
+		// }); // OTRA FORMA:
+		$(function(){
+			console.log('Ya se disparó el evento DOMContentLoaded');
+		});
+
+	</script>
 </body>
 </html>
 

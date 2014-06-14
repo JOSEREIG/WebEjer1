@@ -9,6 +9,8 @@ var $form = $('#formulario'),
 function mostrarFormulario()
 {
 	$form.slideToggle();
+	$list.slideToggle();
+
 	return false;
 } 
 
@@ -16,15 +18,18 @@ function agregarPost()
 {
 	var url = $url.val(),
 		titulo = $titulo.val(),
-		$clone = $post.clone();
+		clone = $post.clone();
 
-	$clone.find('.titulo_item a')
+	clone.find('.titulo_item a')
 		.text(titulo)
 		.attr('href', url);
 
-	$clone.hide();
-	$list.prepend($clone);
-	$clone.fadeIn();
+	clone.hide();
+	$list.prepend(clone);
+	// $clone.fadeIn();
+	mostrarFormulario();
+
+	clone.slideDown();
 
 	return false;
 }
